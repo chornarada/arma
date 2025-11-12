@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сервер Arma 3. Warlords Redux.">
+    <meta name="keywords"
+        content="Arma 3, Arma 3 Servers, Арма 3, ЮА, UA, арма 3 сервера, Чорна Рада, чорна рада сервер, сервер">
+    <meta name="author" content="Chorna Rada">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Чорна Рада — сервер Arma 3">
+    <meta property="og:description" content="Офіційний сайт українського сервера Arma 3 — Чорна Рада. Приєднуйся!">
+    <meta property="og:image" content="https://chornarada.github.io/arma/images/logo.png">
+    <meta property="og:url" content="https://chornarada.github.io/arma">
+    <meta property="og:type" content="website">
+    <meta name="google-site-verification" content="Yn6Ca5YUpGvL2KVJuHfqeN3YF34EhH9Cu9WBZ_zhWAM" />
+    <title>Чорна Рада - Головна</title>
+    <link rel="short icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/getCookie.js" defer></script>
+    <script src="js/js.js" defer></script>
+    <script src="https://hcaptcha.com/1/api.js" async defer></script>
+    <script src="js/complaint.js" defer></script>
+
+    <div class="cookie__container" style="display: none;">
+        <img src="images/cookie.png" width="46px" height="46px">
+        <p style="margin-left: 20px;">Сайт використвує cookie файли</p>
+        <div class="container-btns-cookie">
+            <button class="btn-cookie accept-btn" id="accept-cookie">Прийняти</button>
+            <button class="btn-cookie cancel-btn" id="cancel-cookie">Скасувати</button>
+        </div>
+    </div>
+</head>
+
+<body>
+    <section class="main__section section__index">
+        <div style="background: rgba(0, 0, 0, 0.452); width: 100%; height: 100vh; position: absolute;">
+            <header id="header" class="header header_scroll">
+                <div class="left__navigation-header">
+                    <a style="margin-right: 95px;" href="/">
+                        <img class="header_logo" src="images/logo.png">
+                    </a>
+                </div>
+                <div class="right__navigation-header">
+                    <nav>
+                        <ul class="header__menu">
+                            <li><a href="" class="link__header">Головна</a></li>
+                            <li><a href="rules" class="link__header">Правила</a></li>
+                            <li><a href="#" class="link__header" onclick="popupComplaint()">Скарга</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="main__container">
+                <div style="display: flex; flex-direction: column; gap: 20px; animation: fadeInLeft 1.5s;">
+                    <span class="title__main">Ласкаво просимо до</span>
+                    <span class="nameCompany__title-main">[UA] Warlords Redux - Чорна Рада</span>
+                    <div style="gap: 2px; display: flex; flex-direction: column; margin-bottom: 5px;">
+                        <span>Українська спільнота гравців Arma 3.</span>
+                        <span>Приєднуйся до команди, де кожен — частина справжнього братерства!</span>
+                        <span>Ми прагнемо створити реалістичне та командне середовище,</span>
+                        <span>сповнене атмосфери військових операцій і навчань.</span>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 10px; animation: fadeInRight 1.5s;">
+                    <a target="_blank" href="https://discord.gg/jj73XzKkP3" class="btn__discord">
+                        <svg width="23px" height="23px" viewBox="0 -28.5 256 256" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            preserveAspectRatio="xMidYMid">
+                            <g>
+                                <path
+                                    d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z"
+                                    fill="currentColor" fill-rule="nonzero">
+
+                                </path>
+                            </g>
+                        </svg>
+                        Discord
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main__section" style="margin-top: 50px; height: 55vh;">
+        <div style="
+    width: 500px;
+    margin: 20px auto;
+    text-align: center;
+">
+            <span class="animate__title" style="
+        color: white;
+        font-size: 38px;
+        font-weight: 900;
+        text-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
+    ">
+                чому <span class="big__letters-what">ВАРТО ГРАТИ</span> на
+                <span class="big__letters-what">НАШОМУ СЕРВЕРІ</span>
+            </span>
+        </div>
+
+        <div style="display: flex; justify-content: center; align-items: center; margin-top: 70px;">
+            <div class="container__what">
+                <div class="block__what">
+                    <div class="block__what-content">
+                        <span class="block__what-title">Чистий ігровий досвід</span>
+                        <span class="block__what-description">
+                            Наш сервер пропонує класичну гру без додаткових модифікацій. Тут немає шахт, повітряних або
+                            наземних, і будь-яких інших сторонніх елементів.
+                        </span>
+                    </div>
+                </div>
+
+                <div class="block__what">
+                    <div class="block__what-content">
+                        <span class="block__what-title">Техніка та озброєння</span>
+                        <span class="block__what-description">
+                            На сервері використовується лише стандартна техніка та озброєння Arma 3.
+                        </span>
+                    </div>
+                </div>
+
+                <div class="block__what">
+                    <div class="block__what-content">
+                        <span class="block__what-title">Чесна гра для всіх</span>
+                        <span class="block__what-description">
+                            Всі гравці на рівних умовах. Відсутні будь-які сторонні функції чи можливості, що порушують
+                            баланс гри.
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="popup__back">
+            <div class="popup popup__complaint">
+                <div class="popup__header">
+                    <span class="popup__header-title">Скарги</span>
+                    <button class="popup__close">
+                        <img src="images/svg/close.svg" alt="">
+                    </button>
+                </div>
+                <div class="popup__content">
+                    <form class="form__popup">
+                        <div class="container__input-popup">
+                            <label>Email <span style="color: red;">*</span></label>
+                            <input type="text" name="email" id="email" autocomplete="email" placeholder="name@email.com"
+                                value="@gmail.com" class="input input__apply"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        </div>
+                        <div class="container__input-popup">
+                            <label>Ваш нікнейм в Arma 3 <span style="color: red;">*</span></label>
+                            <input type="text" name="nickname" id="nickname" autocomplete="on"
+                                placeholder="Ваш нікнейм в Arma 3" value="" class="input input__popup">
+                        </div>
+                        <div class="container__input-popup">
+                            <label>Ваше ім'я користувача Discord <span style="color: red;">*</span></label>
+                            <input type="text" name="usernameDiscord" id="usernameDiscord" autocomplete="on"
+                                placeholder="Ваше ім'я користувача Discord" value="" class="input input__popup">
+                        </div>
+                        <div class="container__input-popup">
+                            <label>Опишіть скаргу <span style="color: red;">*</span></label>
+                            <input type="text" name="complaint" id="complaint" autocomplete="on"
+                                placeholder="Опишіть скаргу" value="" class="input input__popup">
+                        </div>
+                        <button type="button" style="margin-top: 5px;" class="btn__add-images" id="addImageBtn">Додати
+                            зображення</button>
+                        <div id="hcaptcha-container">
+                            <div class="h-captcha" data-sitekey="8ee26e34-1b7a-4a62-a5d2-985ecd0ef9fe"></div>
+                        </div>
+                        <button class="btn__popup-form" type="submit">Надіслати</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup__back" id="popupBack"
+            style="display: none; position: fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.5); justify-content: center; align-items: center;">
+            <div class="popup__recruitment" id="popupComplaint"
+                style="transform: scale(0.8); transition: transform 0.3s ease;">
+                <div class="popup__content-recruitment">
+                    <div class="popup__header">
+                        <span class="popup__header-title">Інформація</span>
+                        <button class="popup__close">
+                            <img src="images/svg/close.svg" alt="">
+                        </button>
+                    </div>
+                    <span>Можна додати тільки 3 картинки</span>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
