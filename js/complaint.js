@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.querySelector('.form__popup');
-    const webhookURL = "https://discord.com/api/webhooks/1437870834768285787/XDowROqQ31CR9_ix6_L0L4D4iQVOxwBeYZPeb8x-hR8ipJIMgw_R46l4SgvwOA5cPY2e";
+    const webhookURL = "https://discord.com/api/webhooks/1438235109936595026/5SBmon6nFDLqjLB8r0vAdWESMfIR_OEcJw3U-8_CoixcwHkHavB3hhUi77R_PT2MtlWz";
     let isSubmitting = false;
 
     const imageInput = document.createElement('input');
@@ -66,6 +66,21 @@ document.addEventListener('DOMContentLoaded', function () {
         form.querySelectorAll('input, textarea').forEach(input => {
             if (!validateField(input)) isValid = false;
         });
+
+        const captchaResponse = hcaptcha.getResponse();
+        const captchaContainer = document.getElementById('hcaptcha-container');
+        captchaContainer?.querySelector('.error-message')?.remove();
+        if (!captchaResponse) {
+            isValid = false;
+            if (captchaContainer) {
+                const error = document.createElement('div');
+                error.className = 'error-message';
+                error.textContent = 'Підтвердіть, що ви не робот';
+                captchaContainer.appendChild(error);
+                requestAnimationFrame(() => error.classList.add('visible'));
+            }
+        }
+
         if (!isValid) {
             isSubmitting = false;
             return;
@@ -97,6 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         await fetch(webhookURL, { method: "POST", body: formData });
         form.reset();
+        hcaptcha.reset();
         selectedImages = [];
         containerImg.innerHTML = '';
         showPopup("Вашу заявку успішно надіслано!");
