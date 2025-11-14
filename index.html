@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сервер Arma 3. Warlords Redux.">
+    <meta name="keywords"
+        content="Arma 3, Arma 3 Servers, Арма 3, ЮА, UA, арма 3 сервера, Чорна Рада, чорна рада сервер, сервер">
+    <meta name="author" content="Chorna Rada">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Чорна Рада — сервер Arma 3">
+    <meta property="og:description" content="Офіційний сайт українського сервера Arma 3 — Чорна Рада. Приєднуйся!">
+    <meta property="og:image" content="https://chornarada.github.io/arma/images/logo.png">
+    <meta property="og:url" content="https://chornarada.github.io/arma">
+    <meta property="og:type" content="website">
+    <meta name="google-site-verification" content="Yn6Ca5YUpGvL2KVJuHfqeN3YF34EhH9Cu9WBZ_zhWAM" />
+    <title>Чорна Рада - Головна</title>
+    <link rel="short icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/getCookie.js" defer></script>
+    <script src="js/js.js" defer></script>
+    <script src="https://hcaptcha.com/1/api.js" async defer></script>
+    <script src="js/complaint.js" defer></script>
+
+    <div class="cookie__container" style="display: none;">
+        <img src="images/cookie.png" width="46px" height="46px">
+        <p style="margin-left: 20px;">Сайт використвує cookie файли</p>
+        <div class="container-btns-cookie">
+            <button class="btn-cookie accept-btn" id="accept-cookie">Прийняти</button>
+            <button class="btn-cookie cancel-btn" id="cancel-cookie">Скасувати</button>
+        </div>
+    </div>
+</head>
+
+<body>
+    <section class="main__section section__index">
+        <video src="video/IMG_4866.MP4" loop muted autoplay class="video__index"></video>
+        <div style="background: rgba(0, 0, 0, 0.452); width: 100%; height: 100vh; position: absolute;">
+            <header id="header" class="header header_scroll">
+                <div class="left__navigation-header" style="display: flex; align-items: center;">
+                    <a style="margin-right: 20px;" href="https://chornarada.github.io/arma/">
+                        <img class="header_logo" src="images/logo.png">
+                    </a>
+                    <nav>
+                        <ul class="header__menu">
+                            <li><a href="https://chornarada.github.io/arma/" class="link__header">Головна</a></li>
+                            <li><a href="#rules" class="link__header">Правила</a></li>
+                            <li><a href="#" class="link__header" onclick="popupComplaint()">Скарга</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right__navigation-header">
+                    <div class="cotainer__socials-header">
+                        <a href="https://discord.gg/jj73XzKkP3" class="social__header" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+                                <path
+                                    d="M40.634 8.31127C37.5747 6.90751 34.294 5.87327 30.8638 5.28093C30.8013 5.2695 30.7389 5.29806 30.7067 5.3552C30.2848 6.10563 29.8175 7.08463 29.4902 7.85412C25.8008 7.30178 22.1304 7.30178 18.5166 7.85412C18.1893 7.06753 17.705 6.10563 17.2811 5.3552C17.249 5.29997 17.1866 5.2714 17.1241 5.28093C13.6958 5.87138 10.4151 6.90561 7.35387 8.31127C7.32737 8.32269 7.30465 8.34176 7.28958 8.3665C1.06678 17.6632 -0.6379 26.7314 0.19836 35.6872C0.202144 35.731 0.22674 35.7729 0.260796 35.7996C4.36642 38.8147 8.34341 40.6451 12.2466 41.8583C12.309 41.8774 12.3752 41.8546 12.415 41.8031C13.3383 40.5423 14.1613 39.2128 14.867 37.8147C14.9086 37.7328 14.8688 37.6357 14.7837 37.6033C13.4783 37.1081 12.2352 36.5043 11.0395 35.8187C10.9449 35.7634 10.9373 35.6281 11.0243 35.5634C11.2759 35.3748 11.5276 35.1786 11.7679 34.9805C11.8114 34.9444 11.872 34.9367 11.9231 34.9596C19.7786 38.5461 28.2831 38.5461 36.0459 34.9596C36.097 34.9348 36.1576 34.9425 36.203 34.9787C36.4433 35.1767 36.6949 35.3748 36.9484 35.5634C37.0354 35.6281 37.0298 35.7634 36.9352 35.8187C35.7394 36.5176 34.4964 37.1081 33.189 37.6014C33.1039 37.6338 33.0661 37.7328 33.1077 37.8147C33.8285 39.2108 34.6515 40.5403 35.5578 41.8012C35.5956 41.8546 35.6637 41.8774 35.7262 41.8583C39.6483 40.6451 43.6252 38.8147 47.7309 35.7996C47.7668 35.7729 47.7895 35.7329 47.7933 35.6891C48.7942 25.3352 46.117 16.3414 40.6964 8.3684C40.6832 8.34176 40.6605 8.32269 40.634 8.31127ZM16.04 30.2341C13.675 30.2341 11.7263 28.0628 11.7263 25.3962C11.7263 22.7297 13.6372 20.5584 16.04 20.5584C18.4617 20.5584 20.3916 22.7487 20.3538 25.3962C20.3538 28.0628 18.4428 30.2341 16.04 30.2341ZM31.9895 30.2341C29.6245 30.2341 27.6758 28.0628 27.6758 25.3962C27.6758 22.7297 29.5867 20.5584 31.9895 20.5584C34.4113 20.5584 36.3411 22.7487 36.3033 25.3962C36.3033 28.0628 34.4113 30.2341 31.9895 30.2341Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <!-- <a href="#" class="social__header" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" viewBox="0 0 50 50">
+                                <path
+                                    d="M41,4H9C6.243,4,4,6.243,4,9v32c0,2.757,2.243,5,5,5h32c2.757,0,5-2.243,5-5V9C46,6.243,43.757,4,41,4z M37.006,22.323 c-0.227,0.021-0.457,0.035-0.69,0.035c-2.623,0-4.928-1.349-6.269-3.388c0,5.349,0,11.435,0,11.537c0,4.709-3.818,8.527-8.527,8.527 s-8.527-3.818-8.527-8.527s3.818-8.527,8.527-8.527c0.178,0,0.352,0.016,0.527,0.027v4.202c-0.175-0.021-0.347-0.053-0.527-0.053 c-2.404,0-4.352,1.948-4.352,4.352s1.948,4.352,4.352,4.352s4.527-1.894,4.527-4.298c0-0.095,0.042-19.594,0.042-19.594h4.016 c0.378,3.591,3.277,6.425,6.901,6.685V22.323z" />
+                            </svg>
+                        </a> -->
+                    </div>
+                </div>
+            </header>
+            <div class="main__container">
+                <div style="display: flex; flex-direction: column; gap: 20px; animation: fadeInLeft 1.5s;">
+                    <span class="title__main">Ласкаво просимо до</span>
+                    <span class="nameCompany__title-main">[UA] Warlords Redux - Чорна Рада</span>
+                    <div style="gap: 2px; display: flex; flex-direction: column; margin-bottom: 5px;">
+                        <span>Українська спільнота гравців Arma 3.</span>
+                        <span>Приєднуйся до команди, де кожен — частина справжнього братерства!</span>
+                        <span>Ми прагнемо створити реалістичне та командне середовище,</span>
+                        <span>сповнене атмосфери військових операцій і навчань.</span>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 10px; animation: fadeInRight 1.5s;">
+                    <a href="#section__problem" class="btn__join">
+                        Почати грати
+                    </a>
+                    <div class="container__about-server">
+                        <div class="element__about-server">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-server size-4" aria-hidden="true">
+                                <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
+                                <rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
+                                <line x1="6" x2="6.01" y1="6" y2="6"></line>
+                                <line x1="6" x2="6.01" y1="18" y2="18"></line>
+                            </svg>
+                            <span>Чорна Рада</span>
+                        </div>
+
+                        <div class="element__about-server">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-users size-4" aria-hidden="true">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                            </svg>
+                            <span id="playerCount"></span>
+                            <span> / </span>
+                            <span>128</span>
+                        </div>
+
+                        <div class="element__about-server">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-map size-4" aria-hidden="true">
+                                <path
+                                    d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z">
+                                </path>
+                                <path d="M15 5.764v15"></path>
+                                <path d="M9 3.236v15"></path>
+                            </svg>
+                            <span>Altis</span>
+                        </div>
+
+                        <div class="element__about-server">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-gamepad2 lucide-gamepad-2 size-4"
+                                aria-hidden="true">
+                                <line x1="6" x2="10" y1="11" y2="11"></line>
+                                <line x1="8" x2="8" y1="9" y2="13"></line>
+                                <line x1="15" x2="15.01" y1="12" y2="12"></line>
+                                <line x1="18" x2="18.01" y1="10" y2="10"></line>
+                                <path
+                                    d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z">
+                                </path>
+                            </svg>
+                            <span>Warlords Redux 2.6.11</span>
+                        </div>
+
+                        <div class="element__about-server">
+                            <div class="status-indicator"></div>
+                            <span id="span__status" style="margin-left: 5px;">...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main__section" style="margin-top: 50px; height: 55vh;">
+        <div style="
+    width: 500px;
+    margin: 20px auto;
+    text-align: center;
+">
+            <span class="animate__title" style="
+        color: white;
+        font-size: 38px;
+        font-weight: 900;
+        text-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
+    ">
+                чому <span class="big__letters-what">ВАРТО ГРАТИ</span> на
+                <span class="big__letters-what">НАШОМУ СЕРВЕРІ</span>
+            </span>
+        </div>
+
+        <div style="display: flex; justify-content: center; align-items: center; margin-top: 70px;">
+            <div class="container__what">
+                <div class="block__what">
+                    <div class="block__what-content">
+                        <span class="block__what-title">Чистий ігровий досвід</span>
+                        <span class="block__what-description">
+                            Наш сервер пропонує класичну гру без додаткових модифікацій. Тут немає шахт, повітряних або
+                            наземних, і будь-яких інших сторонніх елементів.
+                        </span>
+                    </div>
+                </div>
+
+                <div class="block__what">
+                    <div class="block__what-content">
+                        <span class="block__what-title">Техніка та озброєння</span>
+                        <span class="block__what-description">
+                            На сервері використовується лише стандартна техніка та озброєння Arma 3.
+                        </span>
+                    </div>
+                </div>
+
+                <div class="block__what">
+                    <div class="block__what-content">
+                        <span class="block__what-title">Чесна гра для всіх</span>
+                        <span class="block__what-description">
+                            Всі гравці на рівних умовах. Відсутні будь-які сторонні функції чи можливості, що порушують
+                            баланс гри.
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <section class="main__section section__problem" id="section__problem">
+            <div style="background: rgba(0, 0, 0, 0.569); width: 100%; height: 100vh; position: absolute;">
+                <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 30px; align-items: center;">
+                    <span class="title__problem-section">Виникли проблеми з приєднанням?</span>
+                    <span class="description__problem-section">Спробуйте під'єднатися вручну через IP</span>
+                </div>
+                <div style="display: flex; justify-content: center; align-items: center; margin-top: 200px;">
+                    <div class="problem__block">
+                        <div style="border-bottom: 1px dashed rgb(75, 75, 75); padding: 10px;">
+                            <span>Чорна Рада</span>
+                        </div>
+                        <span>
+                            Server IP: <span>147.135.197.172</span>
+                        </span>
+                        <span>
+                            Server Port: <span>9000</span>
+                        </span>
+                        <a id="connectLink" class="btn__discord" style="padding: 13px 20px; margin-top: 20px;">Швидке
+                            приєднання</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container__rules" id="rules">
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <h1 class="title__rules">Правила серверу Чорна Рада</h1>
+            </div>
+            <div class="container__span-rules">
+                <div style="margin-top: 20px; gap: 10px; display: flex; flex-direction: column;">
+                    <span class="text__span-rules">1. Заборонено таранити дешевшою технікою дорожчу.</span>
+
+                    <span class="text__span-rules">→ Це вважається нечесною тактикою та порушує баланс гри. Регулярне
+                        порушення призведе до бану.
+                    </span>
+                </div>
+                <div style="margin-top: 20px; gap: 10px; display: flex; flex-direction: column;">
+                    <span>2. Заборонено блокувати союзні злітні смуги.</span>
+                    <span class="text__span-rules">→ Це заважає грі інших гравців та створює дисбаланс. Порушники можуть
+                        бути тимчасово виключені.</span>
+                </div>
+                <div style="margin-top: 20px; gap: 10px; display: flex; flex-direction: column;">
+                    <span>3. Емоції під час гри бувають різні, але ми закликаємо поважати одне одного та уникати
+                        конфліктів.</span>
+                    <span class="text__span-rules">→ Будь-яка агресія, токсичність або провокації можуть призвести до
+                        попередження або блокування.</span>
+                </div>
+                <div style="margin-top: 20px; gap: 10px; display: flex; flex-direction: column;">
+                    <span>4. Російська мова на сервері не вітається.</span>
+                    <span class="text__span-rules">→ До неї застосовується презумпція винуватості. Якщо виникне конфлікт
+                        або
+                        непорозуміння, гравець, що спілкується російською, буде у гіршій позиції.</span>
+                </div>
+                <div style="margin-top: 20px; gap: 10px; display: flex; flex-direction: column;">
+                    <span>5. Адміністрація має право видати бан за спілкування російською на власний розсуд.</span>
+                </div>
+                <div style="margin-top: 20px; gap: 10px; display: flex; flex-direction: column;">
+                    <span>6. Ми не проти політики, однак будь-які прояви ватного світогляду, проросійської позиції чи
+                        провокацій — ведуть до негайного бану без обговорення.</span>
+                    <span class="text__span-rules">→ Сервер має чітку громадянську позицію. Без толерантності до
+                        "ждунів",
+                        ватників чи подібного контингенту.</span>
+                </div>
+                <div style="margin-top: 20px; gap: 10px; display: flex; flex-direction: column;">
+                    <span>7. Заборонено використовувати чити, макроси, експлойти або стороннє ПЗ, що дає
+                        перевагу.</span>
+                    <span class="text__span-rules">→ Будь-яке використання таких інструментів призведе до негайного бану
+                        без
+                        попередження.</span>
+                </div>
+                <div style="margin-top: 20px; gap: 10px; display: flex; flex-direction: column;">
+                    <span>8. Заборонено зловживати внутрішніми механіками гри.</span>
+                    <span class="text__span-rules">→ Це шкодить ігровому процесу та чесній конкуренції.</span>
+                </div>
+                <div style="margin-top: 20px; gap: 10px; display: flex; flex-direction: column;">
+                    <span>9. Не дозволяється спамити у глобальному чаті або зловживати мікрофоном.</span>
+                    <span class="text__span-rules">→ Будьте відповідальні у комунікації, уникайте флуду, оффтопу та
+                        криків у
+                        голосовому каналі.</span>
+                </div>
+                <div style="margin-top: 20px; gap: 10px; display: flex; flex-direction: column;">
+                    <span>10. Заборонено навмисно шкодити своїй команді (тимкілл, блокування техніки, злив
+                        позицій).</span>
+                    <span class="text__span-rules">→ Friendly fire та саботаж — серйозне порушення, що карається
+                        баном.</span>
+                </div>
+                <div style="margin-top: 20px; gap: 10px; display: flex; flex-direction: column;">
+                    <span>11. Оскаржити будь-яке рішення адміністрації можна через Discord..</span>
+                    <span class="text__span-rules">→ Ми відкриті до діалогу, але рішення залишаються на розсуд
+                        адміністрації. </span>
+                </div>
+                <span class="text__span-rules" style="color: gray; margin-top: 20px;">Останнє редагування 11.11.2025 о
+                    18:56</span>
+                <div class="container__copyright">
+                    <img src="images/logo.png">
+                    © Чорна рада Arma 3
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div style="display: flex;     justify-content: space-around;
+    align-items: center;">
+                <a href="https://chornarada.github.io/arma/" class="logo__footer">
+                    <img src="images/logo.png">
+                </a>
+
+                <div class="container__navigation-footer">
+                    <li>
+                        <a href="https://chornarada.github.io/arma/" class="link__footer">
+                            Головна
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#section__problem" class="link__footer">
+                            Швидке приєднання
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#rules" class="link__footer">
+                            Правила
+                        </a>
+                    </li>
+                </div>
+
+                <div class="container__socials-footer">
+                    <a href="https://discord.gg/jj73XzKkP3" class="social__footer" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+                            <path
+                                d="M40.634 8.31127C37.5747 6.90751 34.294 5.87327 30.8638 5.28093C30.8013 5.2695 30.7389 5.29806 30.7067 5.3552C30.2848 6.10563 29.8175 7.08463 29.4902 7.85412C25.8008 7.30178 22.1304 7.30178 18.5166 7.85412C18.1893 7.06753 17.705 6.10563 17.2811 5.3552C17.249 5.29997 17.1866 5.2714 17.1241 5.28093C13.6958 5.87138 10.4151 6.90561 7.35387 8.31127C7.32737 8.32269 7.30465 8.34176 7.28958 8.3665C1.06678 17.6632 -0.6379 26.7314 0.19836 35.6872C0.202144 35.731 0.22674 35.7729 0.260796 35.7996C4.36642 38.8147 8.34341 40.6451 12.2466 41.8583C12.309 41.8774 12.3752 41.8546 12.415 41.8031C13.3383 40.5423 14.1613 39.2128 14.867 37.8147C14.9086 37.7328 14.8688 37.6357 14.7837 37.6033C13.4783 37.1081 12.2352 36.5043 11.0395 35.8187C10.9449 35.7634 10.9373 35.6281 11.0243 35.5634C11.2759 35.3748 11.5276 35.1786 11.7679 34.9805C11.8114 34.9444 11.872 34.9367 11.9231 34.9596C19.7786 38.5461 28.2831 38.5461 36.0459 34.9596C36.097 34.9348 36.1576 34.9425 36.203 34.9787C36.4433 35.1767 36.6949 35.3748 36.9484 35.5634C37.0354 35.6281 37.0298 35.7634 36.9352 35.8187C35.7394 36.5176 34.4964 37.1081 33.189 37.6014C33.1039 37.6338 33.0661 37.7328 33.1077 37.8147C33.8285 39.2108 34.6515 40.5403 35.5578 41.8012C35.5956 41.8546 35.6637 41.8774 35.7262 41.8583C39.6483 40.6451 43.6252 38.8147 47.7309 35.7996C47.7668 35.7729 47.7895 35.7329 47.7933 35.6891C48.7942 25.3352 46.117 16.3414 40.6964 8.3684C40.6832 8.34176 40.6605 8.32269 40.634 8.31127ZM16.04 30.2341C13.675 30.2341 11.7263 28.0628 11.7263 25.3962C11.7263 22.7297 13.6372 20.5584 16.04 20.5584C18.4617 20.5584 20.3916 22.7487 20.3538 25.3962C20.3538 28.0628 18.4428 30.2341 16.04 30.2341ZM31.9895 30.2341C29.6245 30.2341 27.6758 28.0628 27.6758 25.3962C27.6758 22.7297 29.5867 20.5584 31.9895 20.5584C34.4113 20.5584 36.3411 22.7487 36.3033 25.3962C36.3033 28.0628 34.4113 30.2341 31.9895 30.2341Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <!-- <a href="#" class="social__footer" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" viewBox="0 0 50 50">
+                            <path
+                                d="M41,4H9C6.243,4,4,6.243,4,9v32c0,2.757,2.243,5,5,5h32c2.757,0,5-2.243,5-5V9C46,6.243,43.757,4,41,4z M37.006,22.323 c-0.227,0.021-0.457,0.035-0.69,0.035c-2.623,0-4.928-1.349-6.269-3.388c0,5.349,0,11.435,0,11.537c0,4.709-3.818,8.527-8.527,8.527 s-8.527-3.818-8.527-8.527s3.818-8.527,8.527-8.527c0.178,0,0.352,0.016,0.527,0.027v4.202c-0.175-0.021-0.347-0.053-0.527-0.053 c-2.404,0-4.352,1.948-4.352,4.352s1.948,4.352,4.352,4.352s4.527-1.894,4.527-4.298c0-0.095,0.042-19.594,0.042-19.594h4.016 c0.378,3.591,3.277,6.425,6.901,6.685V22.323z" />
+                        </svg>
+                    </a> -->
+                </div>
+            </div>
+            <span class="copyright-span--footer">© Чорна Рада. Всі права захищені.</span>
+        </footer>
+
+        <div class="popup__back">
+            <div class="popup popup__complaint">
+                <div class="popup__header">
+                    <span class="popup__header-title">Скарги</span>
+                    <button class="popup__close">
+                        <img src="images/svg/close.svg" alt="">
+                    </button>
+                </div>
+                <div class="popup__content">
+                    <form class="form__popup">
+                        <div class="container__input-popup">
+                            <label>Email <span style="color: red;">*</span></label>
+                            <input type="text" name="email" id="email" autocomplete="email" placeholder="name@email.com"
+                                value="@gmail.com" class="input input__apply"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        </div>
+                        <div class="container__input-popup">
+                            <label>Ваш нікнейм в Arma 3 <span style="color: red;">*</span></label>
+                            <input type="text" name="nickname" id="nickname" autocomplete="on"
+                                placeholder="Ваш нікнейм в Arma 3" value="" class="input input__popup">
+                        </div>
+                        <div class="container__input-popup">
+                            <label>Ваше ім'я користувача Discord <span style="color: red;">*</span></label>
+                            <input type="text" name="usernameDiscord" id="usernameDiscord" autocomplete="on"
+                                placeholder="Ваше ім'я користувача Discord" value="" class="input input__popup">
+                        </div>
+                        <div class="container__input-popup">
+                            <label>Опишіть скаргу <span style="color: red;">*</span></label>
+                            <input type="text" name="complaint" id="complaint" autocomplete="on"
+                                placeholder="Опишіть скаргу" value="" class="input input__popup">
+                        </div>
+                        <button type="button" style="margin-top: 5px;" class="btn__add-images" id="addImageBtn">Додати
+                            зображення</button>
+                        <div id="hcaptcha-container">
+                            <div class="h-captcha" data-sitekey="8ee26e34-1b7a-4a62-a5d2-985ecd0ef9fe"></div>
+                        </div>
+                        <button class="btn__popup-form" type="submit">Надіслати</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup__back" id="popupBack"
+            style="display: none; position: fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.5); justify-content: center; align-items: center;">
+            <div class="popup__recruitment" id="popupComplaint"
+                style="transform: scale(0.8); transition: transform 0.3s ease;">
+                <div class="popup__content-recruitment">
+                    <div class="popup__header">
+                        <span class="popup__header-title">Інформація</span>
+                        <button class="popup__close">
+                            <img src="images/svg/close.svg" alt="">
+                        </button>
+                    </div>
+                    <span>Можна додати тільки 3 картинки</span>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const steamServer = "147.135.197.172:9000";
+            const steamUri = `steam://connect/${steamServer}`;
+
+            document.getElementById("connectLink").href = steamUri;
+        </script>
+
+</body>
+
+</html>
