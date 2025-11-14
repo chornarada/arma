@@ -199,6 +199,111 @@ body {
     transition: none;
 }
 
+.btn__units {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 2px solid greenyellow;
+    border-radius: 100px;
+    font-weight: 600;
+    color: greenyellow;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    cursor: pointer;
+    isolation: isolate;
+}
+
+.btn__text {
+    position: relative;
+    z-index: 2;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.btn__arrows {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.arrow {
+    position: absolute;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    font-size: 18px;
+}
+
+.arrow:nth-child(1) {
+    transform: translateX(0);
+}
+
+.arrow:nth-child(2) {
+    transform: translateX(-150%);
+}
+
+.btn__circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: linear-gradient(45deg, greenyellow, #a2ff00);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: -1;
+    opacity: 0;
+}
+
+.btn__units:hover {
+    color: #1a1a1a;
+    border-radius: 20px;
+    border-color: transparent;
+    box-shadow:
+        0 10px 30px rgba(173, 255, 47, 0.3),
+        0 0 0 2px rgba(173, 255, 47, 0.1);
+}
+
+.btn__units:hover .btn__circle {
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+}
+
+.btn__units:hover .arrow:nth-child(1) {
+    transform: translateX(150%);
+}
+
+.btn__units:hover .arrow:nth-child(2) {
+    transform: translateX(0);
+}
+
+.btn__units:active {
+    transform: translateY(0) scale(0.98);
+    transition: all 0.2s ease;
+}
+
+.btn__units {
+    animation: btnEntrance 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes btnEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
 .main__section {
     background-position: center;
     background-repeat: no-repeat;
