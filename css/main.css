@@ -260,6 +260,34 @@ body {
     opacity: 0;
 }
 
+.btn__collection {
+    color: rgb(255, 195, 40);
+    border: 2px solid rgb(255, 195, 40);
+}
+
+.btn__collection:hover {
+    background: rgb(255, 195, 40) !important;
+    color: black;
+}
+
+.btn__collection .btn__circle {
+    background: linear-gradient(45deg, rgb(255, 195, 40), rgb(255, 210, 60));
+}
+
+.btn__collection .arrow {
+    color: rgb(255, 195, 40);
+}
+
+.btn__collection:hover .arrow {
+    color: black;
+}
+
+.btn__collection:hover {
+    box-shadow:
+        0 10px 30px rgba(255, 195, 40, 0.3),
+        0 0 0 2px rgba(255, 195, 40, 0.1) !important;
+}
+
 .btn__units:hover {
     color: #1a1a1a;
     border-radius: 20px;
@@ -1172,6 +1200,44 @@ body {
 .copyright-span--footer {
     color: rgb(92, 92, 92);
     text-align: center;
+}
+
+.form__donate {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 456px;
+}
+
+.title__donate {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.container__input-popup label {
+    color: var(--primary);
+    margin-bottom: 3px;
+}
+
+.btn__donate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 24px;
+    border: 1px solid greenyellow;
+    border-radius: 8px;
+    margin-top: 30px;
+    transition: 0.2s all ease;
+}
+
+.btn__donate:hover {
+    background: yellowgreen;
+    color: black;
+    transform: translateY(-3px);
 }
 
 @media (max-width: 1200px) {
